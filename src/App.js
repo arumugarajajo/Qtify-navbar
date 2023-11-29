@@ -7,7 +7,7 @@ function App() {
         <img src={logo} alt="logo" />
         <div className="searchbar">
           <input type="text" placeholder="Search a song of your choice" />
-          {/* <span class="material-symbols-outlined">search</span> */}
+          <span class="material-symbols-outlined">search</span>
         </div>
         <button>Give Feedback</button>
       </div>
