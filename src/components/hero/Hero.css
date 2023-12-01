@@ -1,6 +1,22 @@
+.hero{
+    width: 100%;
+}
 .container{
-    color: white;
-    background-color: black;
+    color: #ffffff;
+    background-color: #121212;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+
+}
+.container img {
+    max-width: 100%; 
+  }
+  
+@media (max-width: 768px) {
+    .hero{
+        width: auto;
+    }
 }
