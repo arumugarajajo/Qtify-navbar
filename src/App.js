@@ -1,16 +1,10 @@
-import "./App.css";
-import logo from "./assets/logo.png";
+import Hero from "./components/hero/Hero";
+import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <div className="App">
-      <div className="components">
-        <img src={logo} alt="logo" />
-        <div className="searchbar">
-          <input type="text" placeholder="Search a song of your choice" />
-          <span class="material-symbols-outlined">search</span>
-        </div>
-        <button>Give Feedback</button>
-      </div>
+      <Navbar />
+      <Hero />
     </div>
   );
 }
