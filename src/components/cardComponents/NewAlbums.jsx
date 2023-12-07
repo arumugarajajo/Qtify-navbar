@@ -20,7 +20,7 @@ function NewAlbums() {
     <div className="newalbums">
       <div className="top-text">
         <h3>Top Albums</h3>
-        <h3 onClick={toggleDisplay}>Select All</h3>
+        <h3 onClick={toggleDisplay}> {!displayAll ? "Show All" : "Collapse All"}</h3>
       </div>
       <div className="card-container">
         {displayAll
