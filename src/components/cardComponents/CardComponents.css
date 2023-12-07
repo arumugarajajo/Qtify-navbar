@@ -8,19 +8,22 @@
   justify-content: center;
   background-color: #121212;
 }
-
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-  padding: 0 10px;
+  width: 90%;
+  margin: 10px auto;
+  padding: 0 5px;
   box-sizing: border-box;
   overflow: hidden;
+  background-color: #121212;
 }
-.cardComponents h3{
+.top-tex {
+  justify-content: space-between;
+}
+.cardComponents .top-tex h3{
   margin-left: 30px;
   color: #f0f0f0;
 }
@@ -35,9 +38,18 @@
   justify-content: space-between;
   position: relative;
   box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.card:last-child {
+  margin-right: 0; 
 }
 .inside {
   height: 100%;
+  background-color: #121212;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+
 }
 .top {
   display: flex;
@@ -46,7 +58,7 @@
   height: 90%;
   overflow: hidden;
   border-radius: 8px;
-  background-color: #121212;
+  background-color: #f0f0f0;
 }
 .img-wrapper {
   position: relative;
@@ -60,7 +72,7 @@
   height: 100%;
 }
 .title,
-.year {
+.description {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -72,11 +84,15 @@
 .title {
   top: 10px;
 }
-.year {
+.description {
   bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 30px;
+  width: 80%;
 }
 .follows {
-  text-align: center;
   border-radius: 5px;
   background-color: #121212;
   color: #f0f0f0;
@@ -85,13 +101,47 @@
   margin: 10px auto;
 }
 .slug {
-  margin: 0px 10px;
-  font-size: 16px;
+  margin: 3px 10px;
+  font-size: 12px;
   text-align: left;
+  color: #f0f0f0  ;
+  flex-wrap: wrap;
 }
-.slug{
-  font-size: 18px;
-  text-align: left;
-  margin: auto;
-  margin-left: 10px;
+.arrow {
+  color: #fff; 
+  font-size: 24px; 
+  background-color: rgba(238, 13, 13, 0.5); 
+  border-radius: 50%;
+  padding: 5px; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  z-index: 1; 
+}
+
+.left {
+  left: 10px; 
+}
+
+.right {
+  right: 10px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #fff;
+  font-size: 24px;
+}
+
+.slick-prev:before {
+  content: "<";
+}
+
+.slick-next:before {
+  content: ">";
+}
+
+/* Ensure the slider container has a defined height */
+.slider-container {
+  height: 300px; /* Set a specific height for the slider container */
+  /* Check if necessary to add overflow or other styles */
 }
