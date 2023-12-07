@@ -1,13 +1,13 @@
 import React from "react";
 import Hero from "./hero/Hero";
 import Navbar from "./navbar/Navbar";
-import CardComponents from "./cardComponents/CardComponents";
+import Card from "./Card/Card";
 function Home() {
   return (
     <div className="home">
       <Navbar />
       <Hero />
-      <CardComponents />
+      <Card />
     </div>
   );
 }

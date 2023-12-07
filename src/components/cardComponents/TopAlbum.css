@@ -1,13 +1,13 @@
 *{
   font-family: 'poppins';
 }
-.cardComponents {
+.topalbums {
   margin-top: -23px;
   align-items: center;
   justify-content: center;
   background-color: #121212;
 }
-.cardComponents .top-text{
+.topalbums .top-text{
   color: #f0f0f0;
   display: flex;
   justify-content: space-between;
