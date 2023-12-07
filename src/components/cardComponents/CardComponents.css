@@ -1,34 +1,34 @@
 *{
   font-family: 'poppins';
 }
-
 .cardComponents {
   margin-top: -23px;
   align-items: center;
   justify-content: center;
   background-color: #121212;
 }
+.cardComponents .top-text{
+  color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+  cursor: pointer;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: center;
+  width: 100%;
   margin: 10px auto;
   padding: 0 5px;
   box-sizing: border-box;
   overflow: hidden;
   background-color: #121212;
 }
-.top-tex {
-  justify-content: space-between;
-}
-.cardComponents .top-tex h3{
-  margin-left: 30px;
-  color: #f0f0f0;
-}
+
 .card {
-  width: calc((100% / 7) - 10px);
+  width: calc((100% / 7) - 10px); 
   height: 232px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
@@ -40,8 +40,9 @@
   box-sizing: border-box;
   margin-bottom: 10px;
 }
+
 .card:last-child {
-  margin-right: 0; 
+  margin-right: 0;
 }
 .inside {
   height: 100%;
@@ -106,42 +107,4 @@
   text-align: left;
   color: #f0f0f0  ;
   flex-wrap: wrap;
-}
-.arrow {
-  color: #fff; 
-  font-size: 24px; 
-  background-color: rgba(238, 13, 13, 0.5); 
-  border-radius: 50%;
-  padding: 5px; 
-  position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%);
-  z-index: 1; 
-}
-
-.left {
-  left: 10px; 
-}
-
-.right {
-  right: 10px;
-}
-.slick-prev:before,
-.slick-next:before {
-  color: #fff;
-  font-size: 24px;
-}
-
-.slick-prev:before {
-  content: "<";
-}
-
-.slick-next:before {
-  content: ">";
-}
-
-/* Ensure the slider container has a defined height */
-.slider-container {
-  height: 300px; /* Set a specific height for the slider container */
-  /* Check if necessary to add overflow or other styles */
 }
